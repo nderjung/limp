@@ -1,0 +1,10 @@
+/.git
+/.cover
+/dist
+!/dist/limp_linux_amd64
+/ui
+/utils
+/image
+/cmd
+/build
+coverage.txt
