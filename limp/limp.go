@@ -79,11 +79,13 @@ func Limp(o Options) error {
 // teeStdin reads lines from stdin and passes it to Limp
 func teeStdin(out *os.File, cur int, o Options) error {
 	var err error
+	var line string
 
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
-		cur, err = limp(out, scanner.Text(), o.TailLength, cur)
-		
+		line = scanner.Text()
+		cur, err = limp(out, line, o.TailLength, cur)
+		fmt.Printf(line + string(NEWLINE))
 		if err != nil {
 			return err
 		}
