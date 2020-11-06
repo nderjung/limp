@@ -14,7 +14,7 @@ Examples:
 
 Flags:
   -h, --help         help for limp
-  -i, --in string    file to follow
+  -i, --in string    file to read or follow
   -n, --lines int    keep the last number of lines (default 10)
   -o, --out string   output file
   -v, --version      display version number
@@ -24,8 +24,8 @@ Flags:
 
 **Ubuntu/Debian**
 ```bash
-wget https://github.com/nderjung/limp/releases/download/v0.1.0/limp_0.1.0_linux_amd64.deb
-sudo apt install ./limp_0.1.0_linux_amd64.deb
+wget https://github.com/nderjung/limp/releases/download/v0.1.1/limp_0.1.1_linux_amd64.deb
+dpkg -i ./limp_0.1.1_linux_amd64.deb
 ```
 
 **Mac**
@@ -35,7 +35,7 @@ brew tap nderjung/homebrew-tap
 brew install limp
 ```
 
-or download the latest Darwin build from the [releases page](https://github.com/nderjung/limp/releases/download/v0.1.0/limp_0.1.0_darwin_amd64.tar.gz).
+or download the latest Darwin build from the [releases page](https://github.com/nderjung/limp/releases/download/v0.1.1/limp_0.1.1_darwin_amd64.tar.gz).
 
 **Go tools**
 Requires Go version 1.10 or higher.
@@ -47,5 +47,5 @@ go get github.com/nderjung/limp
 
 **Docker**
 ```bash
-docker pull ndrjng/limp:v0.1.0
+docker pull ndrjng/limp:v0.1.1
 ```
